@@ -17,3 +17,7 @@ Use GPU in another VM dedicated to AI-tasks while Win11 VM is down.
 3. Attach GPU to Windows VM
 4. Install NVIDIA drivers
 
+### Host Preparation
+
+VFIO modules are explicitly loaded at boot to ensure the GPU is claimed
+by vfio-pci before any graphics drivers.
