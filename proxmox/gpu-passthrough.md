@@ -21,3 +21,8 @@ Use GPU in another VM dedicated to AI-tasks while Win11 VM is down.
 
 VFIO modules are explicitly loaded at boot to ensure the GPU is claimed
 by vfio-pci before any graphics drivers.
+
+### PCI Device Assignment
+
+The GPU was attached using "All Functions" to ensure both the VGA and
+HDMI audio functions are passed through as a single PCI device.
